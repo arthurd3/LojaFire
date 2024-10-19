@@ -1,0 +1,403 @@
+
+/* IMPORTANDO FONTS DO GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+
+/* CORPO */
+
+body {
+    display: grid;
+    box-sizing: border-box; /*Elemento Nao Sobrepoem o Outro */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-repeat: repeat;
+    background: linear-gradient( #182848 22%, #2d225d 50%, #4b6cb7 75%, #182848 100%);  /*Faz uma Transição de Cores e Especifica com to bottom para onde Sera (Cima Para Baixo)*/
+    font-family: "Poppins";
+}
+
+li , a , button {
+    font-size: 18px;
+    color: white;
+    text-decoration: none; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between; /*Espaço Entre os Elementos*/
+    align-items: center; /*Alinhados Na Vertical*/
+    margin: 0;
+    padding: 10px 25px;
+    background-color: #202020;
+
+}
+
+/* CORPO COM INFORMAÇÕES */
+
+.infos {
+    padding: 0px;
+    margin-left: 60px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 33px;
+}
+
+#info-aling{
+    box-sizing: border-box;
+    box-shadow: 25px 25px 16px rgba(43, 35, 88, 0.67);
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 10%;
+}
+
+
+.infos img {
+    max-width: 700px;
+    max-height: 700px;
+    width: 1024px;
+    height: 1024px;
+    box-shadow: 0 20px 9px rgba(2, 2, 2, 0.2); /* Adiciona uma sombra ao box */
+}
+
+.infos button {
+    background-color: #131212;
+    margin-left: 43%;
+    margin-bottom: 10px;
+}
+
+.infos button:hover {
+    background-color: #09550d;
+}
+
+.infos button:hover:before {
+    content: '🛒';
+    display: inline;
+    color: white;
+    font-size: 20px;
+}
+
+.infos h1 {
+    color: var(--color-neutral-30);
+    padding: 190px;
+    padding-bottom: 0%;
+    margin-right: 100px;
+    margin: 2%;
+    margin-bottom: 50px;
+    justify-content: right;
+    align-items: center;
+}
+
+.infos p {
+    font-size: 20px;
+    padding: 15px;
+    padding-top: 0%;
+    margin: 20px;
+    margin-bottom: 20px;
+    color: var(--color-neutral-40);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NAVBAR */
+
+.logotipo img {
+    width: 84px;  
+    height: auto;  
+    border-radius: 70%; /*Torna a Imagem um circulo*/
+}
+
+.nav-links{
+    list-style: none; /*Sem Estilização Sem As Bolinhas do <LI></LI>*/
+}
+
+
+.nav-links li{
+    align-items: center;
+    display: inline-block;  /*Por padrao li sao block , sempre quebram a linha apos um novo li adicionado , isso remove essa quebra de linha*/
+    padding: 0px 20px;  /*0px EM CIMA E BAIXO , 20px Direita e Esquerda*/
+}
+
+
+.nav-links li a:hover{
+    color: rgb(59, 59, 138);
+}
+
+button {
+    padding: 10px 20px;  /* Direita Esquerda 10px , Cima E Baixo 20px */
+    background-color: rgb(70, 70, 187);
+    border: none;  
+    border-radius: 60px;  /*Arredonda por Inteiro o Button */
+    cursor: pointer;  /*Efeito da Maozinha do Mouse*/
+    transition: all 0.4s;
+}
+
+button:hover{
+    
+    background-color: rgb(56, 56, 190);
+  
+}
+
+
+/* RODAPE */
+
+/*Declarando Variavel*/
+:root {
+    --color-neutral-0: #0e0c0c; 
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;  
+    --color-neutral-40: #f5f5f5;  
+}
+
+.footer {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 80%;
+    color: var(--color-neutral-40);
+    bottom: 0%;
+    
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Divide Em Quatro Colunas*/
+    padding: 3rem 3.5rem;
+    gap: 1rem; /* Adicionado espaço entre as colunas */
+}
+
+
+.footer_subscribe{
+    color: var(--color-neutral-40);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer_subscribe p{
+    color: var(--color-neutral-30);
+    
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+    color: var(--color-neutral-40);
+}
+
+#footer_social_midia {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_midia .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+#footer_social_midia .footer-link:hover{
+    opacity: 20;
+}
+
+
+#instagram {
+    background: linear-gradient(#7f37c9 , #ff2992 , #ff9807);
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+
+.footer-list .footer-link{
+    color: var(--color-neutral-30);
+    transition: all 0.2s;
+}
+
+
+.footer-list .footer-link:hover{
+    color: #7f37c9;
+}
+
+#footer_copyright{
+    color: var(--color-neutral-40);
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+/*Deixa Tela Responsiva*/
+
+@media(max-width : 800px){ /*Enquanto ele tiver ate 800px SobreEscrever a formatação :*/
+    li , a , button {
+        font-size: 20px;
+
+        
+    }
+    .logotipo img {
+        width: 78px;  
+    }
+
+    div.games img{
+        max-width: 200px; 
+        max-height: 200px; 
+        width: 200px;
+        height: 200px;
+    }
+
+    .nav-links li{
+        align-items: center;
+        display: inline-block; 
+        padding: 0px 10px; 
+    }
+
+    .infos {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 20px; 
+        padding: 20px; 
+    }
+
+    .infos img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .infos h1 {
+        padding: 23px;
+        margin: 0;
+        text-align: center; 
+    }
+
+    .infos button {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+
+    .infos p {
+        font-size: 13px;
+        padding: 25px;
+        padding-top: 0%;
+        margin: 2px;
+        margin-bottom: 20px;
+        color: var(--color-neutral-40);
+    }
+
+
+    #footer_content {
+        grid-template-columns: 1fr; /* Coloca todos os itens em uma coluna */
+        padding: 2rem 1rem; /* Ajusta o padding do footer */
+    }
+
+    #footer_social_midia {
+        flex-direction: row; /* Mantenha as mídias sociais em linha */
+        justify-content: space-around; /* Espaço igual entre ícones */
+        margin-top: 1rem; /* Ajusta a margem superior */
+    }
+    
+}
+
+
+@media(max-width : 430px){ /*Enquanto ele tiver ate 800px SobreEscrever a formatação :*/
+    li , a , button {
+        font-size: 20px;
+
+        
+    }
+    .logotipo img {
+        width: 55px;  
+    }
+
+    div.games img{
+        max-width: 200px; 
+        max-height: 200px; 
+        width: 200px;
+        height: 200px;
+    }
+
+    .nav-links li{
+        align-items: center;
+        display: inline-block; 
+        padding: 0px 10px; 
+    }
+
+
+    .infos {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 20px; 
+        padding: 20px; 
+    }
+
+    .infos img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .infos h1 {
+        padding: 23px;
+        margin: 0;
+        text-align: center; 
+    }
+
+    .infos button {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+
+    .infos p {
+        font-size: 16px;
+        padding: 25px;
+        padding-top: 0%;
+        margin: 2px;
+        margin-bottom: 20px;
+        color: var(--color-neutral-40);
+    }
+
+
+    #footer_content {
+        grid-template-columns: 1fr; /* Coloca todos os itens em uma coluna */
+        padding: 2rem 1rem; /* Ajusta o padding do footer */
+    }
+
+    #footer_social_midia {
+        flex-direction: row; /* Mantenha as mídias sociais em linha */
+        justify-content: space-around; /* Espaço igual entre ícones */
+        margin-top: 1rem; /* Ajusta a margem superior */
+    }
+    
+}
